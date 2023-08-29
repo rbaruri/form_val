@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Phudu:wght@400;571&display=swap');
+      </style>
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="head">Enter Details</h1>
+    <form id="registration-form">
+        <div class="form-group">
+            <label for="full-name">Full Name:</label><br>
+            <input type="text" id="full-name" name="full-name" required>
+            <span class="error-message" id="full-name-error"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" id="email-error"></span>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" minlength="8" required>
+            <span class="error-message" id="password-error"></span>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label><br>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <span class="error-message" id="confirm-password-error"></span>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required>
+            <span class="error-message" id="dob-error"></span>
+        </div>
+        <div class="btn">
+        <button type="submit" id="submit-button" onclick="success()" disabled>Register</button>
+    </div>
+    </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
